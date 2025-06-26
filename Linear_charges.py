@@ -5,6 +5,8 @@ import joblib
 # Load the trained Linear Regression model
 model = joblib.load('linear_regression_model.joblib')
 
+st.title("🏥 Insurance Charges Prediction App")
+st.subheader("Enter the following details:")
 claim_amount = st.number_input("Claim Amount", min_value=0.0, format="%.2f")
 past_consultations = st.number_input("Number of Past Consultations", min_value=0)
 hospital_expenditure = st.number_input("Hospital Expenditure", min_value=0.0, format="%.2f")
